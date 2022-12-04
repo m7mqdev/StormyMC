@@ -1,0 +1,9 @@
+main: dev.m7mqd.stormymc.RanksPlugin
+name: RanksGUI
+version: 0.1
+author: 77mod
+depend: [LuckPerms]
+soft-depend: [LuckPerms]
+commands:
+  temprank:
+    description: Setting the rank of specified player, needs temprank.use permission
