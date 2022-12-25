@@ -5,6 +5,7 @@ import dev.m7mqd.stormymc.menus.abstraction.RankInventoryHolder;
 import dev.m7mqd.stormymc.menus.utils.ItemStackBuilder;
 import dev.m7mqd.stormymc.ranks.RanksEnum;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.LuckPermsProvider;
 import org.bukkit.Bukkit;
@@ -17,10 +18,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemFlag;
 
 import java.util.HashMap;
-import java.util.UUID;
 
 public class SelectableRankMenu extends Menu {
-    private final @Getter HashMap<UUID, String> selectedPlayers = new HashMap<>();
     private final @Getter SelectableDurationMenu selectableDurationMenu;
 
     public SelectableRankMenu(){

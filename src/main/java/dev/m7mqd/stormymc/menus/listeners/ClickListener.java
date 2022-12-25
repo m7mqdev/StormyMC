@@ -3,6 +3,7 @@ package dev.m7mqd.stormymc.menus.listeners;
 import dev.m7mqd.stormymc.menus.SelectableRankMenu;
 import dev.m7mqd.stormymc.menus.abstraction.RankInventoryHolder;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -10,11 +11,9 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
 
+@RequiredArgsConstructor
 public class ClickListener implements Listener {
     private final @Getter SelectableRankMenu selectableRankMenu;
-    public ClickListener(SelectableRankMenu selectableRankMenu){
-        this.selectableRankMenu = selectableRankMenu;
-    }
 
     @EventHandler
     public void onClick(InventoryClickEvent event){

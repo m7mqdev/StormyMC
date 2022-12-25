@@ -5,7 +5,6 @@ import lombok.Setter;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 
-import java.util.UUID;
 
 @Getter
 @Setter

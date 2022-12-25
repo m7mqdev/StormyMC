@@ -6,8 +6,8 @@
 
     <groupId>com.stormymc</groupId>
     <name>Ranks</name>
-    <artifactId>StormyMC</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>Ranks</artifactId>
+    <version>1.1-SNAPSHOT</version>
 
     <packaging>jar</packaging>
     <properties>

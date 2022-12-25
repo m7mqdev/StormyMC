@@ -3,17 +3,16 @@ package dev.m7mqd.stormymc.commands;
 import dev.m7mqd.stormymc.menus.SelectableRankMenu;
 import dev.m7mqd.stormymc.utils.TextHelper;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+@RequiredArgsConstructor
 public class TempRank implements CommandExecutor {
     private final @Getter SelectableRankMenu selectableRankMenu;
-    public TempRank(SelectableRankMenu selectableRankMenu){
-        this.selectableRankMenu = selectableRankMenu;
-    }
     @Override
     public boolean onCommand(CommandSender commandSender, Command cmd, String label, String[] args) {
         if(!(commandSender instanceof Player)){

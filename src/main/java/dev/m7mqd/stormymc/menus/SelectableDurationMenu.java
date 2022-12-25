@@ -7,6 +7,7 @@ import dev.m7mqd.stormymc.ranks.DurationsEnum;
 import dev.m7mqd.stormymc.ranks.RanksEnum;
 import dev.m7mqd.stormymc.utils.TextHelper;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import net.luckperms.api.LuckPerms;
 import net.luckperms.api.model.group.Group;
 import net.luckperms.api.model.user.User;
@@ -26,17 +27,12 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemFlag;
 
 import java.util.HashMap;
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+@RequiredArgsConstructor
 public class SelectableDurationMenu extends Menu {
     private final LuckPerms luckPerms;
-    private final @Getter HashMap<UUID, String> selectedPlayers = new HashMap<>();
 
-    public SelectableDurationMenu(LuckPerms luckPerms){
-        super();
-        this.luckPerms = luckPerms;
-    }
     @Override
     public String getName() {
         return "Select the duration for this user";
